@@ -75,9 +75,9 @@ matrix:
     - python: "nightly"
       env:
         # these are python packages so prepend "git+" to git URL
-        - NUMPY=git+https://github.com/numpy/numpy.git
-        - MPL=git+https://github.com/matplotlib/matplotlib.git
-        - PYPROJ=git+https://github.com/jswhit/pyproj.git
+        - NUMPY="--pre numpy"
+        - MPL="--pre matplotlib"
+        - PYPROJ="--pre pyproj"
         # C lib, git URL only
         - BUILD_LIBGEOS=https://github.com/libgeos/libgeos.git
         # or download latest stable
